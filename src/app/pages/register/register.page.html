@@ -1,7 +1,7 @@
 <ion-header>
-  <ion-toolbar color="Primary">
+  <ion-toolbar color="warning">
   	<ion-buttons slot="start">
-		<ion-back-button defaultHref="/login"></ion-back-button>
+		<!--ion-back-button defaultHref="/login"></ion-back-button-->
 	</ion-buttons>
     <ion-title>Creat New Account</ion-title>
   </ion-toolbar>
@@ -10,6 +10,27 @@
 <ion-content>
 
 	<ion-img class="logo" src="assets/images/logo.png"></ion-img>
+  <ion-item class="input-box">
+    <ion-label position="floating" color="primary">Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+	
+	<ion-item class="input-box">
+    <ion-label position="floating" color="primary">Email</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
 
-
+  <ion-item class="input-box">
+    <ion-label position="floating" color="primary">Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+	<ion-item class="input-box">
+    <ion-label position="floating" color="primary">Comfirm Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+   <ion-button routerLink="/temp" routerDirection="forward" class="click-btn" expand="block">submit</ion-button>
+   <ion-button routerLink="/login" routerDirection="forward" class="click-btn" expand="block">back</ion-button>
+  
 </ion-content>
