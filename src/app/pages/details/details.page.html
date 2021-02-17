@@ -7,6 +7,50 @@
  	</ion-toolbar>
 </ion-header>
 
-<ion-content padding>
- 	My ID is: {{ myId }}
+<ion-content [fullscreen]="true">
+
+ 	<ion-img class="logo" src="assets/images/logo.png"></ion-img>
+  <ion-item>
+    <ion-label class="username">
+      Welcome User!
+    </ion-label>
+  </ion-item>
+
+  <ion-item href="https://appletreeproject.org/map" detail>
+    <ion-label>
+      <ion-button color="medium">Apple Tree Project Interactive Map</ion-button>
+    </ion-label>
+  </ion-item>
+
+  <ion-item detail>
+    <ion-label>
+      <ion-button color="medium">Data Entry</ion-button>
+    </ion-label>
+  </ion-item>
+
+  <ion-item-group>
+    <ion-item-divider color="medium">
+      <ion-label color="light">Previous Data Entries</ion-label>
+    </ion-item-divider>
+
+    <ion-item color="light">
+      <ion-label>Dummy Entry 1</ion-label>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Dummy Entry 2</ion-label>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Dummy Entry 3</ion-label>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Dummy Entry 4</ion-label>
+    </ion-item>
+    <ion-item color="light">
+      <ion-label>Dummy Entry 5</ion-label>
+    </ion-item>
+
+  </ion-item-group>
+
+
+
 </ion-content>
