@@ -1,1 +1,20 @@
-0
+
+ion-content {
+  .logo {
+    padding-top:20%;
+    height: 40vh;
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  --ion-background-color:#B5C9A9;
+ .button-bottom{
+	height: 7vh;
+    margin: 2em 3em;
+	}
+  .word{
+    font-size: 20px;
+	margin-left: 20px;
+    
+	}
+}
