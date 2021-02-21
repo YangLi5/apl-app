@@ -6,33 +6,31 @@
 </ion-header-->
 
 <ion-content >
-<ion-img class="logo" src="assets/images/logo.png"></ion-img>
-<br /><br />
-<div class="ion-text-center" >
-<ion-note class="word" >Please check your email for confirmation.
-This will take just a few moments.While you are waiting, 
-let’s gather the supplies you will need to measure trees:</ion-note>
-</div>
-<br />
-<ion-note class="table">____tape measure </ion-note><br />
-<ion-note class="table">____DBH tape (optional) </ion-note><br />
-<ion-note class="table">____envelope for collecting leaves (optional)</ion-note><br />
-<ion-note class="table">____permission to be on the land where the tree is located</ion-note><br />
- <br />
- <div class="ion-text-center" >
-<ion-note class="word" >At the end of this survey, you will have the opportunity to send your tree data to the
-<ion-router-link href="morporchard@gmail.com">Montezuma Orchard Restoration Project </ion-router-link>
-and the Fruit RegisTREE adding to the data gathered by apple explorers nationwide!
-</ion-note>
-</div>
-<ion-img class="logo" src="assets/images/MORP_logo.jpg"></ion-img>
-   <ion-content>
-   
-       <div class="button-bottom">
+	<ion-img class="logo" src="assets/images/logo.png"></ion-img>
 
-		 <ion-button routerLink="/login" routerDirection="forward" class="click-btn" expand="block">back</ion-button>
-       </div>
-   </ion-content>
+	<div class="ion-text-center" >
+		<p class="word_a" >
+			Please check your email for confirmation. This will take just a few moments. While you are waiting, let’s gather the supplies you will need to measure trees:
+		</p>
+	</div>
+
+	<ion-list>
+		<ion-item *ngFor="let entry of form">
+			<ion-label class="label_att">{{entry.val}}</ion-label>
+			<ion-checkbox slot="start" [(ngModel)]="entry.isChecked"></ion-checkbox>
+		</ion-item>
+	</ion-list>
+
+	<div class="ion-text-center" >
+		<p class="word_b" >
+			At the end of this survey, you will have the opportunity to send your tree data to the <ion-router-link href="morporchard@gmail.com">Montezuma Orchard Restoration Project </ion-router-link>and the Fruit RegisTREE adding to the data gathered by apple explorers nationwide!
+		</p>
+	</div>
+
+	<ion-img class="logo_b" src="assets/images/MORP_logo.jpg"></ion-img>
+    <div class="button-bottom">
+		<ion-button routerLink="/login" routerDirection="forward" class="click-btn" expand="block">back</ion-button>
+	</div>
 
 
 
