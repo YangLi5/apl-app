@@ -13,8 +13,7 @@ ion-content {
   }
 
   .input-box {
-    padding: 0em 2.6em;
-    padding-top: 2em;
+    padding: 7% 10% 0% 10%;
     --highlight-color-focused: ;
   }
   
@@ -26,6 +25,16 @@ ion-content {
 
   .forget {
     padding-right: 2em;
+  }
+
+  .remember {
+    padding-left: 44%;
+    padding-right: 4%;
+  }
+
+  .remember_label {
+    padding: 0 10%;
+    text-align: left;
   }
 
 }
