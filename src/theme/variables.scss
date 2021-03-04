@@ -3,6 +3,8 @@
 
 /** Ionic CSS Variables **/
 :root {
+  --ion-background-color: #85a671;
+  --ion-background-color-rgb: 136,166,113;
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,7 +76,104 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** pastel brown **/
+  --ion-color-pastelbrown: #806255;
+  --ion-color-pastelbrown-rgb: 128,98,85;
+  --ion-color-pastelbrown-contrast: #ffffff;
+  --ion-color-pastelbrown-contrast-rgb: 255,255,255;
+  --ion-color-pastelbrown-shade: #71564b;
+  --ion-color-pastelbrown-tint: #8d7266;
+
+  /** red **/
+  --ion-color-red: #c1272c;
+  --ion-color-red-rgb: 193,39,44;
+  --ion-color-red-contrast: #ffffff;
+  --ion-color-red-contrast-rgb: 255,255,255;
+  --ion-color-red-shade: #aa2227;
+  --ion-color-red-tint: #c73d41;
+
+  /** white smoke **/
+  --ion-color-whitesmoke: #f8f6f2;
+  --ion-color-whitesmoke-rgb: 248,246,242;
+  --ion-color-whitesmoke-contrast: #000000;
+  --ion-color-whitesmoke-contrast-rgb: 0,0,0;
+  --ion-color-whitesmoke-shade: #dad8d5;
+  --ion-color-whitesmoke-tint: #f9f7f3;
+
+  /** asparagus **/
+  --ion-color-asparagus: #85a671;
+  --ion-color-asparagus-rgb: 133,166,113;
+  --ion-color-asparagus-contrast: #000000;
+  --ion-color-asparagus-contrast-rgb: 0,0,0;
+  --ion-color-asparagus-shade: #759263;
+  --ion-color-asparagus-tint: #91af7f;
+
+  /** old burgundy **/
+  --ion-color-oldburgundy: #44362a;
+  --ion-color-oldburgundy-rgb: 68,54,42;
+  --ion-color-oldburgundy-contrast: #ffffff;
+  --ion-color-oldburgundy-contrast-rgb: 255,255,255;
+  --ion-color-oldburgundy-shade: #3c3025;
+  --ion-color-oldburgundy-tint: #574a3f;
+
+  --ion-background-color: #85a671;
+
 }
+
+ion-button {
+  --color: "whitesmoke";
+}
+.fancy-button {
+  --background: #806255;
+}
+
+
+.ion-color-pastelbrown {
+  --ion-color-base: var(--ion-color-pastelbrown);
+  --ion-color-base-rgb: var(--ion-color-pastelbrown-rgb);
+  --ion-color-contrast: var(--ion-color-pastelbrown-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-pastelbrown-contrast-rgb);
+  --ion-color-shade: var(--ion-color-pastelbrown-shade);
+  --ion-color-tint: var(--ion-color-pastelbrown-tint);
+}
+
+.ion-color-red {
+  --ion-color-base: var(--ion-color-red);
+  --ion-color-base-rgb: var(--ion-color-red-rgb);
+  --ion-color-contrast: var(--ion-color-red-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-red-contrast-rgb);
+  --ion-color-shade: var(--ion-color-red-shade);
+  --ion-color-tint: var(--ion-color-red-tint);
+}
+
+.ion-color-whitesmoke {
+  --ion-color-base: var(--ion-color-whitesmoke);
+  --ion-color-base-rgb: var(--ion-color-whitesmoke-rgb);
+  --ion-color-contrast: var(--ion-color-whitesmoke-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-whitesmoke-contrast-rgb);
+  --ion-color-shade: var(--ion-color-whitesmoke-shade);
+  --ion-color-tint: var(--ion-color-whitesmoke-tint);
+}
+
+.ion-color-asparagus {
+  --ion-color-base: var(--ion-color-asparagus);
+  --ion-color-base-rgb: var(--ion-color-asparagus-rgb);
+  --ion-color-contrast: var(--ion-color-asparagus-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-asparagus-contrast-rgb);
+  --ion-color-shade: var(--ion-color-asparagus-shade);
+  --ion-color-tint: var(--ion-color-asparagus-tint);
+}
+
+.ion-color-oldburgundy {
+  --ion-color-base: var(--ion-color-oldburgundy);
+  --ion-color-base-rgb: var(--ion-color-oldburgundy-rgb);
+  --ion-color-contrast: var(--ion-color-oldburgundy-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-oldburgundy-contrast-rgb);
+  --ion-color-shade: var(--ion-color-oldburgundy-shade);
+  --ion-color-tint: var(--ion-color-oldburgundy-tint);
+}
+
 
 @media (prefers-color-scheme: dark) {
   /*
